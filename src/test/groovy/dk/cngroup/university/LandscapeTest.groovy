@@ -8,7 +8,7 @@ import static dk.cngroup.university.Field.INACCESSIBLE
 
 class LandscapeTest extends Specification {
 
-    def static Field[][] testLandscape = [
+    static Field[][] testLandscape = [
             [ACCESSIBLE, ACCESSIBLE, ACCESSIBLE],
             [ACCESSIBLE, ACCESSIBLE, ACCESSIBLE],
             [ACCESSIBLE, ACCESSIBLE, ACCESSIBLE]
@@ -36,7 +36,7 @@ class LandscapeTest extends Specification {
         Landscape landscape = new Landscape(generator, 3)
 
         when:
-        String result = landscape.toString();
+        String result = landscape.toString()
 
         then:
         result == """00.
